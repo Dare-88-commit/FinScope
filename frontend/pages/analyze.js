@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { Upload, Search } from "lucide-react";
 import Link from "next/link";
-import Navbar from "../components/Navbar"; // Make sure path is correct
-import Footer from "../components/Footer"; // Make sure path is correct
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function AnalyzePage() {
     const [message, setMessage] = useState("");
@@ -25,17 +25,17 @@ export default function AnalyzePage() {
                     </p>
 
                     <textarea
-                        className="w-full border border-gray-200 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700 min-h-[150px] mb-4 resize-none"
+                        className="w-full border border-gray-200 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-[#003366] text-gray-700 min-h-[150px] mb-4 resize-none"
                         placeholder="Paste suspicious message here..."
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     />
 
                     <div className="flex justify-between gap-3">
-                        <button className="flex items-center justify-center gap-2 bg-[#032D60] text-white px-4 py-2 rounded-full hover:bg-[#021E40] transition">
+                        <button className="flex items-center justify-center gap-2 bg-[#003366] text-white px-4 py-2 rounded-full hover:bg-[#021E40] transition">
                             <Upload size={18} /> Upload Screenshot
                         </button>
-                        <button className="bg-[#032D60] text-white px-6 py-2 rounded-full hover:bg-[#021E40] transition">
+                        <button className="bg-[#003366] text-white px-6 py-2 rounded-full hover:bg-[#021E40] transition">
                             Analyze Message
                         </button>
                     </div>
@@ -54,7 +54,7 @@ export default function AnalyzePage() {
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5 text-blue-500"
+                            className="w-5 h-5 text-[#003366]"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -112,11 +112,11 @@ export default function AnalyzePage() {
                         <input
                             type="text"
                             placeholder="Paste URL, number, or sender ID here..."
-                            className="flex-1 border border-gray-200 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
+                            className="flex-1 border border-gray-200 rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#003366] text-gray-700"
                             value={url}
                             onChange={(e) => setUrl(e.target.value)}
                         />
-                        <button className="bg-[#032D60] text-white px-5 py-2 rounded-full hover:bg-[#021E40] transition flex items-center gap-2">
+                        <button className="bg-[#003366] text-white px-5 py-2 rounded-full hover:bg-[#021E40] transition flex items-center gap-2">
                             <Search size={18} /> Check Now
                         </button>
                     </div>
