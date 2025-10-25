@@ -6,7 +6,14 @@ import { logger } from "./utils/logger.js";
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(
+    cors({
+        origin: ["https://fin-scope-kappa.vercel.app", "http://localhost:3000"],
+        methods: ["GET", "POST"],
+        allowedHeaders: ["Content-Type"],
+    })
+);
+
 app.use(express.json({ limit: "50kb" })); // text payloads only; images go via multipart
 app.get("/health", (_req, res) => res.json({ ok: true }));
 app.use("/api/analyze", analyzeRouter);

@@ -134,8 +134,8 @@ export default function AnalyzePage() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h4l3 10 4-14h7" />
                         </svg>
                         <div>
-                            <h3 className="text-sm font-medium text-gray-800">Scam Trends</h3>
-                            <p className="text-xs text-gray-500">See what’s trending in your region.</p>
+                            <h3 className="text-sm font-medium text-gray-800">Back To Home</h3>
+                            <p className="text-xs text-gray-500">Go back to your home page.</p>
                         </div>
                     </Link>
 
