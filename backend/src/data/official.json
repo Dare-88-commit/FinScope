@@ -1,0 +1,33 @@
+{
+    "officialUrls": [
+        {
+            "name": "Central Bank of Nigeria",
+            "url": "https://www.cbn.gov.ng",
+            "notes": "Official domain"
+        },
+        {
+            "name": "Guaranty Trust Bank",
+            "url": "https://www.gtbank.com",
+            "notes": "Official domain"
+        },
+        {
+            "name": "Zenith Bank",
+            "url": "https://www.zenithbank.com",
+            "notes": "Official domain"
+        }
+    ],
+    "senderIds": [
+        {
+            "name": "UBA Alerts",
+            "id": "UBA-Alerts",
+            "notes": "Branded SMS sender ID"
+        }
+    ],
+    "shortcodes": [
+        {
+            "name": "MTN",
+            "code": "131",
+            "notes": "Data/airtime services"
+        }
+    ]
+}
